@@ -1,5 +1,5 @@
 # Trello-To-Microsoft-Planner
-    Python script to take a JSON dump from a Trello board and format the results into a Excel file that Power Automate & Plans can integrate with. Need to build an additional Flow in Power Automate to complete migration. Doesn't require hosting. 
+Python script to take a JSON dump from a Trello board and format the results into a Excel file that Power Automate & Plans can integrate with. Need to build an additional Flow in Power Automate to complete migration. Doesn't require hosting. 
 
 ## Step 1: 
 In Trello, `Show Menu > More > Print and Report > Export as JSON`. Copy the JSON dump into a JSON file. Save the file to the working directory. 
