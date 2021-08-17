@@ -8,7 +8,7 @@ In Trello, `Show Menu > More > Print and Report > Export as JSON`. Copy the JSON
 In the working directory make sure Python 3, `pandas`, and `xlsxwriter` are installed (`py -m pip install pandas` and `py -m pip install xlsxwriter`. May need to put `python`, `python3`, or `py3` instead of `py`). Create an empty Excel file called trello.xlsx in the working directory. Run `py -m trello [json] [table]`. Instead of `[json]` write the name of the json file saved previously. Instead of `[table]` type the name you want for the Excel sheet. For example: `py -m trello Informatics.json Informatics`.  
 
 ## Step 3:
-In the Sharepoint for the Team, create a new List. Select Create from Excel file > Upload > choose trello.xlsx. 
+In the Sharepoint for the Team, create a new List. Select Create from Excel file > Upload > Choose trello.xlsx. 
 
 ## Step 4: 
 In Power Automate, set up a Flow to read the Excel file and create tasks & buckets. The current flow looks like
@@ -27,7 +27,7 @@ For each task:
         If item Title matches task Title: 
             Update task details with description and checklists. 
 ```
-If you have a copy of the existing one, it will need slight modification on its import/export location. Go to Edit flow > Get Items > Change fields Site Address and List Name to the right Sharepoint location and the right list (different for each department). Then in Apply to each 3 > Create bucket, Apply to each 3 > List Buckets, and List tasks, make sure the Group Id and Plan Id are pointing to the plan you want to export to. 
+If you have a copy of the existing one, it will need slight modification on its import/export location. Go to Edit flow > Get Items > Change fields Site Address and List Name to the right Sharepoint location and the right list (different for each department). Then in Apply to each 3 > Condition > Create a bucket bucket, Apply to each 3 > List Buckets, Apply to each 3 > Apply to each 2 > Create a task, and List tasks, make sure the Group Id and Plan Id are pointing to the plan you want to export to. 
 
 ## Step 5:
 Run the Flow in Power Automate. 
